@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import TrollFace from "./assets/trollface.png";
 import Sound from "./assets/Troll Sound Effect.mp3";
-import "./App.css"
+import "./App.css";
 
 function App() {
   const [showText, setShowText] = useState(false);
@@ -18,7 +18,10 @@ function App() {
 
   return (
     <>
-      <img src={TrollFace} alt="trollface" />
+      <img
+        src={TrollFace}
+        alt='trollface'
+      />
       <h1>You just got trolled by themuuln!!!</h1>
       <h1>Problem?</h1>
       <button onClick={handleButtonClick}>Click here to turn Music off!</button>
